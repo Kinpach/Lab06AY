@@ -62,16 +62,10 @@ public:
             throw BreadException("wrong date", flour, date);
         }
         
-        // Если все проверки пройдены, инициализируем поля
         flour_type = flour;
         manufacture_date = date;
     }
     
-    // Методы для получения информации о хлебе
-    string getFlourType() const { return flour_type; }
-    string getManufactureDate() const { return manufacture_date; }
-    
-    // Метод для печати информации о хлебе
     void printInfo() const {
         cout << "Bread (" << flour_type << "), date: " << manufacture_date << endl;
     }
